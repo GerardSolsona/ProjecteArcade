@@ -1,0 +1,40 @@
+#Main 
+from time import sleep
+def menu():
+    print("Menú Principal")
+    print ("1. Jugar a Pedra, Paper, Tisora")
+    print("2. Jugar a Endivinar el número")
+    print ("3. Sortiir")
+
+def main():
+    while True:
+        menu()
+        opcio = input("Elegeix un número d'opció: ")
+
+        match opcio:
+            case "1":
+                print("Has triat Pedra, Paper, Tisora")
+            case "2":
+                print("Has triat Endivinar el número")
+            case "3":
+                print("Sortint del joc...")
+                break
+            case _:
+                print("Opció no vàlida. Torna-ho a intentar.")
+
+
+       
+
+        opcio = input("Elegeix un número d'opció: ")
+
+        match opcio:
+            case "1": ("1. Jugar a Pedra, Paper, Tisora")
+            case "2": ("2. Jugar a Endivinar el número")
+            case "3": ("3. Sortiir")
+  
+ sleep(3)
+        
+if __name__=="__main__":
+# Exeprograma
+    main()
+
