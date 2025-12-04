@@ -25,10 +25,10 @@ def Pedra_Paper_Tisora():
         print( "empat")
 
 #JOC 2 endivina un numero
-#definir funcions
+import random
+
+# Definim la funció
 def endivina_un_numero():
-    return
-    def endivina_un_numero():
     # Generem un número aleatori entre 1 i 100
     numero_secret = random.randint(1, 100)
     intent = None
@@ -36,7 +36,7 @@ def endivina_un_numero():
     print("endivina el numero")
     
     # Bucle fins que l'usuari encerti
-    while intent != numero_secret:
+    while intent == numero_secret:
         try:
             intent = int(input("Introdueix un número: "))
             
@@ -51,7 +51,5 @@ def endivina_un_numero():
 
 # Cridem la funció
 endivina_un_numero()
-
-
 
 
