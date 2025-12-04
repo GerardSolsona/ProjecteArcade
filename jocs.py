@@ -28,4 +28,30 @@ def Pedra_Paper_Tisora():
 #definir funcions
 def endivina_un_numero():
     return
+    def endivina_un_numero():
+    # Generem un número aleatori entre 1 i 100
+    numero_secret = random.randint(1, 100)
+    intent = None
+    
+    print("endivina el numero")
+    
+    # Bucle fins que l'usuari encerti
+    while intent != numero_secret:
+        try:
+            intent = int(input("Introdueix un número: "))
+            
+            if intent < numero_secret:
+                print("Massa petit! ")
+            elif intent > numero_secret:
+                print("Massa gran!")
+            else:
+                print("Correcte! Has endevinat el número.")
+        except ValueError:
+            print("Si us plau, introdueix un número vàlid.")
+
+# Cridem la funció
+endivina_un_numero()
+
+
+
 
